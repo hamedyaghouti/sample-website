@@ -1,0 +1,442 @@
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: #364d59 !important;
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.top-bar {
+    padding: 25px 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+}
+
+.top-bar .logo {
+    flex-grow: 1;
+    font-size: 29px;
+    font-weight: bold;
+}
+
+.top-bar .contacts {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+    align-items: center;
+    flex-grow: 3;
+}
+
+.contacts .item {
+    flex-grow: 1;
+    text-align: center;
+}
+
+.menu-container {
+    display: flex;
+    padding: 0 0 20px 0;
+    /* -ms-flex-preferred-size: 90%; flex-basis: 90%; max-width: 90%;*/
+}
+
+.menu-container .menu {
+    display: flex;
+}
+
+.menu-container .menu a {
+    padding: 15px 20px;
+    border-radius: 2px;
+    margin: 0 5px;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+.menu-container .menu a:hover {
+    color: crimson;
+    font-weight: bold;
+}
+
+.intro {
+    display: flex;
+    padding: 100px 0;
+    background-color: beige;
+}
+
+.intro .intro-items {
+    align-self: center;
+}
+
+.intro .intro-items img {
+    max-width: 500px;
+    max-height: 500px;
+}
+
+.intro .intro-btn {
+    display: flex;
+    background-color: crimson;
+    max-width: 150px;
+    min-height: 40px;
+    border-radius: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro .intro-btn a {
+    color: white;
+}
+
+.feature {
+    padding: 50px 0;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+}
+
+.feature .feature-header {
+    align-self: center;
+}
+
+.feature h1 {
+    max-width: 500px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.feature .feature-items-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.feature .feature-items-container .feature-items {
+    background-color: khaki;
+    background-clip: padding-box;
+    border: 10px solid transparent;
+}
+
+.feature .feature-items-container .feature-items .icon {
+    padding: 50px 0 0 30px;
+    font-size: 40px;
+}
+
+.feature .feature-items-container .feature-items h3 {
+    padding-left: 30px;
+}
+
+.feature .feature-items-container .feature-items p {
+    padding: 0 30px 50px 30px;
+}
+
+.feature .feature-btn {
+    margin-top: 10px;
+    display: flex;
+    background-color: crimson;
+    min-width: 200px;
+    min-height: 40px;
+    align-self: center;
+    border-radius: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.feature .feature-btn a {
+    color: white;
+}
+
+.shop {
+    display: flex;
+    background: url("../img/91.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.shop .shop-items {
+    min-height: 500px;
+    background-color: rgba(255, 255, 255, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.shop .shop-items .shop-items-center {
+    width: 70%;
+    height: 70%;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 2px dashed deepskyblue;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+.shop .shop-items .shop-items-center .icon {
+    font-size: 48px;
+    padding: 30px 0 20px 0;
+    align-self: center;
+}
+
+.shop .shop-items .shop-items-center h1 {
+    align-self: center;
+    color: deepskyblue;
+    text-align: center;
+}
+
+.shop .shop-items .shop-items-center p {
+    padding: 0 40px;
+    align-self: center;
+    text-align: center;
+}
+
+.shop .shop-items .shop-items-center .shop-btn {
+    display: flex;
+    background-color: deepskyblue;
+    max-width: 150px;
+    min-height: 40px;
+    padding: 0 10px;
+    border-radius: 2px;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.shop .shop-items .shop-items-center .shop-btn a {
+    color: white;
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 1075px) {
+    .shop .shop-items .shop-items-center {
+        width: 70%;
+        height: 70%;
+        background-color: rgba(255, 255, 255, 0);
+        border: 2px dashed transparent;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+    }
+
+    .shop .shop-items .shop-items-center h1 {
+        align-self: center;
+        color: white;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .shop .shop-items .shop-items-center {
+        width: 70%;
+        height: 70%;
+        border: none;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+    }
+}
+
+.info1 {
+    display: flex;
+    flex-direction: row;
+    padding: 50px 0;
+    background-color: mintcream;
+}
+
+.info1 .info1-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info1 .info1-items .info1-items-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.info1 .info1-items img {
+    width: 500px;
+    height: 500px;
+}
+
+@media only screen and (max-width: 992px) {
+    .info1 .info1-items img {
+        width: 350px;
+        height: 350px;
+    }
+}
+
+@media only screen and (max-width: 769px) {
+    .info1 .info1-items img {
+        width: 500px;
+        height: 500px;
+    }
+}
+
+.info2 {
+    display: flex;
+    flex-direction: row;
+    padding: 50px 0;
+    background-color: beige;
+}
+
+.info2 .info2-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info2 .info2-items img {
+    width: 500px;
+    height: 500px;
+}
+
+.info2 .info2-items .info2-items-text {
+    display: flex;
+    flex-direction: column;
+}
+
+@media only screen and (max-width: 992px) {
+    .info2 .info2-items img {
+        width: 350px;
+        height: 350px;
+    }
+}
+
+@media only screen and (max-width: 769px) {
+    .info2 .info2-items .info2-items-text h2 {
+        padding: 20px 0 0 0;
+    }
+
+    .info2 .info2-items img {
+        width: 500px;
+        height: 500px;
+    }
+}
+
+.ready {
+    min-height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("../img/img\(48\).jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.ready h2 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: whitesmoke;
+}
+
+.support {
+    padding: 100px 0;
+    background-color: aquamarine;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.support .support-items {
+    display: flex;
+    flex-direction: column;
+}
+
+.support .support-items .support-items-header {
+    font-size: 50px;
+    text-align: center;
+}
+
+.support .support-items .support-items-text {
+    text-align: center;
+    max-width: 500px;
+    font-size: 20px;
+    margin-top: -20px;
+}
+
+.support .support-items .support-items-email {
+    text-align: center;
+}
+
+.service {
+    display: flex;
+    flex-direction: column;
+    padding: 50px 0;
+}
+
+.service .service-header {
+    align-self: center;
+}
+
+.service .service-text {
+    align-self: center;
+    max-width: 500px;
+    text-align: center;
+}
+
+.service .service-items-container {
+    align-self: center;
+}
+
+.service .service-items-container .service-items {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+}
+
+.service .service-items-container .service-items .service-items-header {
+    align-self: center;
+    font-size: 30px;
+}
+
+.service .service-items-container .service-items .service-items-img {
+    max-height: 100px;
+    max-width: 300px;
+    align-self: center;
+}
+
+.service .service-items-container .service-items .service-items-text {
+    text-align: center;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 0;
+    background-color: black;
+}
+
+.footer .footer-item1 {
+    flex-basis: 30%;
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.footer .footer-item2 {
+    display: flex;
+    flex-basis: 25%;
+    justify-content: center;
+    color: white;
+}
+
+.footer .footer-header {
+    font-weight: bold;
+    color: crimson;
+}
+
+.footer a {
+    color: white;
+}
